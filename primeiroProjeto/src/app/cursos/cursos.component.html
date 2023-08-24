@@ -1,0 +1,14 @@
+<hr>
+<hr><p
+>
+  Lista de cursos do portal {{ nomePortal }}
+</p>
+<app-cursos-detalhe></app-cursos-detalhe>
+<ul *ngFor="let curso of cursos">
+  <li>{{ curso }}</li>
+  <!--data binding
+    {{ }} interpolacao
+    [propriedade]="valor"
+    (evento)="handler"
+    [(ngModel)]="propriedade" -->
+</ul>
