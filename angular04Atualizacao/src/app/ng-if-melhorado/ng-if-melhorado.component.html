@@ -1,0 +1,20 @@
+<h3>*ngIf Melhorado</h3>
+<hr>
+<button (click)="onMostrarCursos()">Mostrar ou Escoder</button>
+<h5>*ngIf Angular 2.x</h5>
+<div *ngIf="mostrarCursos">
+  Lista de cursos Aqui!
+</div>
+<div *ngIf="!mostrarCursos">
+  Não existem cursos para serem listados!
+</div>
+<h5>*ngIf Angular 4.x</h5>
+<div *ngIf="mostrarCursos;else cursosVazio">
+  Lista de cursos Aqui!
+</div>
+<ng-template #cursosVazio>
+  Não existem cursos para serem listados!
+</ng-template>
+<hr>
+<h3>*ngFor Melhorado</h3>
+<hr>
